@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body onload="randomQuotes()">
+    <p id="quote"></p>
+    <script>
+    var quotes = ['A Bia é bucha', 'Don\'t trust Bia', '3ª tentativa', 'hello', 'world']
+    function randomQuotes() {
+        var idx = Math.floor(Math.random() * quotes.length)
+        document.getElementById('quote').innerHTML = quotes[idx]
+    }
+    </script>
+
+</body>
